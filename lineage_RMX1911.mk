@@ -21,25 +21,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from Realme RMX1801
-$(call inherit-product, device/realme/RMX1801/device.mk)
+# Inherit from Realme RMX1911
+$(call inherit-product, device/realme/RMX1911/device.mk)
 
 # Set Shipping API level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-PRODUCT_NAME := lineage_RMX1801
-PRODUCT_DEVICE := RMX1801
-PRODUCT_MANUFACTURER := OPPO
-PRODUCT_BRAND := oppo
-PRODUCT_MODEL := Realme 2 Pro
+PRODUCT_NAME := lineage_RMX1911
+PRODUCT_DEVICE := RMX1911
+PRODUCT_MANUFACTURER := realme
+PRODUCT_BRAND := realme
+PRODUCT_MODEL := realme 5
 
-PRODUCT_GMS_CLIENTID_BASE := android-oppo
+PRODUCT_GMS_CLIENTID_BASE := android-realme
 
-TARGET_VENDOR_PRODUCT_NAME := RMX1801
-TARGET_VENDOR_DEVICE_NAME := RMX1801
+TARGET_VENDOR_PRODUCT_NAME := RMX1911
+TARGET_VENDOR_DEVICE_NAME := RMX1911
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="RMX1801" \
-    PRIVATE_BUILD_DESC="sdm660_64-user 10 QKQ1.191014.001 eng.root.20201016.161857 release-keys"
+    PRODUCT_NAME="RMX1911" \
+    PRIVATE_BUILD_DESC="trinket-user 10 RMX1911_11_C.75_210917 release-keys"
 
-BUILD_FINGERPRINT := "OPPO/RMX1801/RMX1801:10/QKQ1.191014.001/1602573502:user/release-keys"
+BUILD_FINGERPRINT := "trinket-user-10-RMX1911_11_C.75_210917-release-keys"

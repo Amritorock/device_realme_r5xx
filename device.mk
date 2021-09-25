@@ -15,7 +15,7 @@
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/realme/RMX1801/RMX1801-vendor.mk)
+$(call inherit-product, vendor/realme/RMX1911/RMX1911-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -39,7 +39,7 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/realme/RMX1801
+PRODUCT_SOONG_NAMESPACES += device/realme/RMX1911
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -77,7 +77,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := RMX1801
+TARGET_OTA_ASSERT_DEVICE := RMX1911
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -199,10 +199,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.9 \
     vendor.display.config@1.9_vendor
 
-# Doze
-PRODUCT_PACKAGES += \
-    RealmeParts
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl:64 \
@@ -211,7 +207,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.realme_sdm660
+    android.hardware.biometrics.fingerprint@2.1-service.realme_RMX1911
 
 # fwk-detect
 PRODUCT_PACKAGES += \
@@ -278,7 +274,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.realme_sdm660
+    android.hardware.light@2.0-service.realme_RMX1911
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -369,7 +365,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    librecovery_updater_RMX1801
+    librecovery_updater_RMX1911
 
 # Seccomp
 PRODUCT_COPY_FILES += \
