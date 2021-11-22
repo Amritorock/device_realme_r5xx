@@ -3077,13 +3077,7 @@ vendor/etc/sn100u_pnx_ndi.pnscr
 vendor/etc/sn100u_pnx_pcv.pnscr
 vendor/etc/sn100u_pnx_sst.pnscr
 
-# Pasrmanager
-vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
-vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
-vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so
-vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so
-
-# Peripheral manager - from LA.UM.9.11.r1-03900-NICOBAR.0
+# Peripheral manager - from LA.UM.9.11.r1-03900-NICOBAR
 vendor/bin/pm-proxy|6ab1401348bdfce25ad74396c7dbf62ccae1dfdf
 vendor/bin/pm-service|951e322c67132fe8826648e4fda9ddf5e4304e8a
 vendor/lib64/libperipheral_client.so|0820ee76c595691935b7d8896471ea0b172b0f58
