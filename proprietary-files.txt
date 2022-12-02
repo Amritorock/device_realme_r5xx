@@ -1,5 +1,3 @@
-## RMX1911 package version: RMX1911EX_11_OTA_1750_all_jV3dh7ZywV3k, unless stated otherwise
-
 # ACDB loader
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so

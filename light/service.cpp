@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.realme_RMX1911"
+#define LOG_TAG "android.hardware.light@2.0-service.r5x"
 
 #include <hidl/HidlTransportSupport.h>
 

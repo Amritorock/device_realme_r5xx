@@ -1,6 +1,13 @@
 [
-  {
-    "repository": "android_kernel_realme_RMX1911",
-    "target_path": "kernel/realme/RMX1911"
-  }
+    {
+        "repository":   "kernel_realme_r5x",
+        "target_path":  "kernel/realme/r5x",
+        "branch":       "OSS"
+    },
+    {
+        "repository":   "vendor_realme_r5x_10",
+        "target_path":  "vendor/realme/r5x",
+        "branch":       "10.0",
+        "remote":       "Amritorock"
+    }
 ]

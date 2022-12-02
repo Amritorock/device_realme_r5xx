@@ -21,25 +21,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from Realme RMX1911
-$(call inherit-product, device/realme/RMX1911/device.mk)
+# Inherit from Realme 5 Series
+$(call inherit-product, device/realme/r5x/device.mk)
 
 # Set Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-PRODUCT_NAME := lineage_RMX1911
-PRODUCT_DEVICE := RMX1911
+PRODUCT_NAME := lineage_r5x
+PRODUCT_DEVICE := r5x
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := realme 5
+PRODUCT_MODEL := Realme 5 Series
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
-TARGET_VENDOR_PRODUCT_NAME := RMX1911
-TARGET_VENDOR_DEVICE_NAME := RMX1911
+TARGET_VENDOR_PRODUCT_NAME := r5x
+TARGET_VENDOR_DEVICE_NAME := r5x
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="RMX1911" \
-    PRIVATE_BUILD_DESC="trinket-user 10 RMX1911_11_C.75_210917 release-keys"
-
-BUILD_FINGERPRINT := "trinket-user-10-RMX1911_11_C.75_210917-release-keys"
+    PRODUCT_NAME="r5x" \
+    PRIVATE_BUILD_DESC="trinket-user 10 QKQ1.200209.002 release-keys"
