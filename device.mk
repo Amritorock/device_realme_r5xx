@@ -194,9 +194,13 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio \
     qcom.fmradio.xml
-
+ 
 PRODUCT_BOOT_JARS += \
     qcom.fmradio
+
+# Egis Fingerprint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/egis.sh:install/bin/egis.sh
 
 # Freeform Windows
 PRODUCT_COPY_FILES += \

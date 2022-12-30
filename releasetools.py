@@ -20,10 +20,12 @@ import re
 
 def FullOTA_InstallEnd(info):
   OTA_InstallEnd(info)
+  CopyEgisFix(info)
   return
 
 def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info)
+  CopyEgisFix(info)
   return
 
 def AddImage(info, basename, dest):
@@ -40,3 +42,7 @@ def OTA_InstallEnd(info):
   AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
   return
 
+def CopyEgisFix(info):
+  info.script.Print("Searching for EGIS FP and patching...")
+  info.script.AppendExtra('run_program("/sbin/sh", "/tmp/install/bin/egis.sh");')
+  return
