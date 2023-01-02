@@ -525,15 +525,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libnl \
-    libqdMetaData \
-    libqdMetaData.system \
-    libqdMetaData.vendor \
     libwfdaac_vendor \
     vendor.display.config@2.0
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/realme/r5x/r5x-vendor.mk)
